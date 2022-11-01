@@ -1,0 +1,16 @@
+#contentArea  { 
+  align-self:start;
+    padding: 1em 0px 1em .5em;
+}
+#sidebar  {
+    border: 2px solid black;
+    padding: 1em 0px 1em .5em;
+		align-self:end;
+}
+
+#sidebar hr  {
+	margin-bottom:3em;
+	margin-top:2em;
+}
+
+/**************   Media Queries    ********************/

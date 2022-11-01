@@ -1,0 +1,33 @@
+
+
+.gallery3Col  {
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 1em;
+}
+.sidebar > img  {
+	margin: 0px auto;
+}
+.sidebar  > hr  {
+	margin:1em auto 2em auto;
+}
+.footer  {
+	font-size: 16px;
+}
+
+
+/*  Media Queries  */
+
+/*  Tablet  */
+@media screen and (max-width: 1199px) {
+	.gallery3Col  {
+		grid-template-columns: 1fr 1fr;
+	}
+ }
+ 
+ /*  Phone  */
+ @media screen and (max-width: 900px) {
+	.gallery3Col  {
+		grid-template-columns: 1fr;
+	}
+ }
