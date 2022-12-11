@@ -1,0 +1,16 @@
+.modal {
+  padding: 2rem;
+  border: 1px solid #eee;
+  width: max-content;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+}
+
+.button-close-modal {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: auto;
+}
