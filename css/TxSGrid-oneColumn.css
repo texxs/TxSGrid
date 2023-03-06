@@ -55,7 +55,7 @@ img  {
 	max-width: 1200px;
 	grid-template-rows: minmax(150px, auto) 1fr 110px;
 	min-height:999px;
-	height:99%; /* this, combined with the line above it helps keep the footer at the  bottom while having a fixed header size and variable maintContent/sidebar area.  Remove this line if you want a shorter page overall.  */
+	height:99%; /* this, combined with the line above it helps keep the footer at the  bottom while having a fixed header size and variable mainContent/sidebar area.  Remove this line if you want a shorter page overall.  */
 
 	/*remove or comment out the below after testing */
 	/* grid-gap:10px; 
