@@ -1,0 +1,23 @@
+
+header  {
+	min-width: 1200px;
+	min-height: 500px;
+	
+	width:100%;
+	height:650px; /* sample image is  800px high adjust this height as
+									needed but you'll also need to adjust the "top" value in the .hero-text class as well.*/
+	top:0;
+	left: 0;
+	background-image: url("../images/moon_2651_1200x800.jpg"); 
+  background-size: cover;
+}
+.hero-text  {
+	position:relative;
+	top: 65%;
+	min-width:60%;
+	max-width:80%;
+	margin-left:2em;
+	background-color:rgba(248, 248, 255, 0.45);
+	color:rgb(150, 71, 14);
+	border-radius: 10px;
+}

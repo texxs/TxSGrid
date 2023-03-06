@@ -1,0 +1,107 @@
+/*//////  Hero Grid  /////*/
+header {
+  display: grid;
+  grid-template-areas: "hero";
+  align-items: center;
+  height: 65vh;
+  max-height: 600px;
+}
+header > * {
+  grid-area: hero;
+}
+header img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 5vw -5vmin;
+     object-position: 5vw -5vmin;
+  height: min(65vh, 600px);
+  width: 80%;
+  justify-self: end;
+  transition: 180ms width ease-in;
+}
+@media (min-width: 60rem) {
+  header img {
+    width: 60%;
+  }
+}
+.hero-content {
+  margin: 1rem 0 1rem 5%;
+  max-width: 35%;
+  min-width: 30ch;
+  z-index: 99;
+  background-color: rgba(249, 251, 253, 0.8);
+  border-radius: 1rem;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+/* the above is adapted from an article at
+https://moderncss.dev/3-popular-website-heroes-created-with-css-grid-layout/
+*/
+
+/*//////  Grid  ///////*/
+.grid  {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: minmax(100px, max-content) 1fr minmax(100px, max-content);
+	grid-template-areas: 
+		"top-header top-header"
+		"main-content sidebar"
+		"footer footer"
+	;
+	gap: 7px;
+	background-color: #DCD9BF;
+	margin: 1rem auto 0 auto;
+	width:88%;
+	max-width: 1200px;
+	border-radius: 8px;
+}
+.top-header  {
+	grid-area: top-header;
+	background-color: #F2C3B2;
+	border-radius: 8px;
+	padding:.25rem 1rem .5rem 1.5rem;
+}
+.main-content  {
+	grid-area: main-content;
+	background-color: #F2C3B2;
+	border-radius: 8px;
+	padding:.25rem 1rem .5rem 1.5rem;
+}
+.sidebar  {
+	grid-area: sidebar;
+	background-color: #F2C3B2;
+	border-radius:8px;
+	padding:.25rem 1rem .5rem 1.5rem;
+}
+.footer  {
+	grid-area: footer;
+	background-color: #F2C3B2;
+	border-radius: 8px;
+	padding:.25rem 1rem .5rem 1.5rem;
+}
+
+/*/////  Grid Media Queries  //////*/
+
+@media screen and (max-width: 800px) {
+	.grid {
+    grid-template-columns: 1fr;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas: 
+			"top-header"
+			"main-content"
+			"sidebar"
+			"footer"
+			;
+			grid-gap:6px;
+  }
+	.top-header, .main-content, .sidebar, .footer  {
+		margin: 0 6px 0 6px;
+	}
+	.top-header  {
+		margin-top: 5px;
+	}
+	.footer  {
+		margin-bottom: 5px;
+	}
+
+}

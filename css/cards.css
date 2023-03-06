@@ -1,0 +1,29 @@
+.cards {
+  display: grid;
+  max-width: 1200px;
+  padding-inline: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  margin-bottom: 1.5rem;
+}
+
+.simplest-card  {
+    min-height: 400px;
+    width: 300px;
+    filter: drop-shadow(10px 10px 6px #adacaa);
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.simplest-card > h1  {
+    font-size: 2rem;
+}
+.simplest-card > button {
+    margin-top: .75rem;
+}
+
+@media screen and (max-width: 800px) {
+    .cards  {
+        grid-template-columns: minmax(320px, 1fr);
+    }
+}

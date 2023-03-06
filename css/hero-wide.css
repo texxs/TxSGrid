@@ -1,0 +1,90 @@
+/*//////  Grid  ///////*/
+
+.grid-hero  {
+	display:grid;
+	width:100%;
+	height: 10%;
+	min-height: 900px;
+	background-image: url(../images/moon-0749_2272X1704.jpg);
+	background-size: cover;
+	margin:-10px -10px 0 -10px;
+}
+
+	.hero-text  {
+		position:relative;
+		min-width:60%;
+		max-width:80%;
+		margin: 33% auto 33% auto;
+		background-color:rgba(248, 248, 255, 0.45);
+		color:rgb(150, 71, 14);
+		border-radius: 10px;
+	}
+	
+}
+.grid  {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: minmax(100px, max-content) 1fr minmax(100px, max-content);
+	grid-template-areas: 
+		"top-header top-header"
+		"main-content sidebar"
+		"footer footer"
+	;
+	gap: 7px;
+	background-color: #DCD9BF;
+	margin: 1rem auto 0 auto;
+	width:88%;
+	max-width: 1200px;
+	border-radius: 8px;
+}
+.top-header  {
+	grid-area: top-header;
+	background-color: #F2C3B2;
+	/* border-radius: 8px;
+	padding:.25rem 1rem .5rem 1.5rem; */
+	padding: 0;
+}
+.main-content  {
+	grid-area: main-content;
+	background-color: #F2C3B2;
+	border-radius: 8px;
+	padding:.25rem 1rem .5rem 1.5rem;
+}
+.sidebar  {
+	grid-area: sidebar;
+	background-color: #F2C3B2;
+	border-radius:8px;
+	padding:.25rem 1rem .5rem 1.5rem;
+}
+.footer  {
+	grid-area: footer;
+	background-color: #F2C3B2;
+	border-radius: 8px;
+	padding:.25rem 1rem .5rem 1.5rem;
+}
+
+/*/////  Grid Media Queries  //////*/
+
+@media screen and (max-width: 800px) {
+	.grid {
+    grid-template-columns: 1fr;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas: 
+			"top-header"
+			"main-content"
+			"sidebar"
+			"footer"
+			;
+			grid-gap:6px;
+  }
+	.top-header, .main-content, .sidebar, .footer  {
+		margin: 0 6px 0 6px;
+	}
+	.top-header  {
+		margin-top: 5px;
+	}
+	.footer  {
+		margin-bottom: 5px;
+	}
+
+}
