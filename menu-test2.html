@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Experiments with CSS Grid</title>
+<!--   <link rel="stylesheet" href="css/reset.css"> -->
+  <link rel="stylesheet" href="css/sidebar.css">
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/menu2.css">
+</head>
+<body>
+	<div class="grid">
+
+	<header class="top-header">
+		<h1>Experiments with CSS Grid</h1>		
+		<div class="nav">
+			<label for="show-menu" class="show-menu">&#9776;</label>
+    <input type="checkbox" id="show-menu" role="button">
+        <ul id="menu">
+        <li><a href="#">Home</a></li>
+        <li>
+            <a href="#">About ￬</a>
+            <ul class="hidden">
+                <li><a href="#">Who We Are</a></li>
+                <li><a href="#">What We Do</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Portfolio ￬</a>
+            <ul class="hidden">
+                <li><a href="#">Photography</a></li>
+                <li><a href="#">Web & User Interface Design</a></li>
+                <li><a href="#">Illustration</a></li>
+            </ul>
+        </li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+		</div>
+	</header>
+
+	<article class="main-content">
+    <h2>Menu 2 Test </h2>
+    	<p>Just focusing on function so far this one  has some issues.</p>
+			<ul>
+				<li>Effects every list on  the page.  should be easy to fix.</li>
+				<li>Looks like perhaps it messes up my buttons too!</li>
+				<li>test <a href="https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/" targtet="_blank">this</a> for menu 3.</li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+    <p>Look for the tests of a third menu here:</p>
+		<p class="centeredText"><a href="menu3.html" class="dark-ghost-button">Menu 3</a></p>
+		
+		<hr>
+    <p>
+      For some reason the font on my ghost buttons, example below, looks like a different size than usual?  Maybe I've changed it somewhere
+    </p>
+		<p class="centered-text"><a href="index.html"><button class="dark-ghost-button">Home Page</button></a></p>
+    <p>Calling it (the ghost buttons font size) fixed?</p>
+    <hr>
+    <h3>WishList / Future List</h3>
+    <p>Okay I've fixed enough small crap to move on to adding new things.  But where to start?  How do I remember what I want to do next when I resume work on this the next day?  A list of stuff here can't hurt.  Maybe later I'll move it to a new page.</p>
+    <ul>
+      <li>Other Templates
+        <ul>
+          <li>Let's start with a single column layout and then a left column side bar layout, etc. I guess each layout will get it's own stylesheet that contains the grid for that layout and <span class="codey">styles.css</span> will just have common things like the headings and buttons etc.</li>
+        </ul>
+      </li>
+      <li><strong>Add Navigation!</strong> . . . duh
+        <ul>
+          <li>This one adds dilemas.  what style nav, where? etc.</li>
+          <li>I propose simple drop nav not using any Js, oerhaps  lifted from </li>
+        </ul>
+      </li>
+      <li>Photo Gallery</li>
+      <li><a href="cards.html">Cards</a></li>
+      <li>Forms</li>
+      <li>Add the random photo script to the sidebar?
+        <ul>
+          <li><a href="https://css-tricks.com/snippets/php/randomize-background-image/" target="_blank">Here's</a> how you would do it in PHP, red down in the comments and you'll see how to do it without even building an array like you would have to with JavaScript. But then I'd have to make all these pages PHP pages . . .</li>
+        </ul>
+      </li>
+      <li>Add something to the footer? (like random text? and/or columns?)</li>
+    </ul>
+    <hr>
+    
+    <h3>The Headings</h3>
+		<h1>Heading One</h1>
+		<h2>Heading Two</h2>
+		<h3>Heading Three</h3>
+		<h4>Heading Four</h4>
+		<h5>Heading Five</h5>
+		<h6>Heading Six</h6>
+
+
+	</article>
+	
+	<aside class="sidebar">
+		<h3>Sidebar</h3>
+		<hr>
+		<h4>Objectives</h4>
+		<p>So far I have a simple 2 column, 3 row grid.  I'd like to use it as a boilerplate for starting any 3 row, 2 column page I'd like to build in this "website".  I know the design is real sparse here and that's important because this website is really just about figuring some things out once and for all, and even getting more and more complicated as  I go. When I've master this, I'll start adding different layouts, more complicated components, like columns (in the footer perhaps?), cards, modals and navbars etc.  Then I'll perhaps go even further and add some different page types like image gallery pages, hero pages, etc.</p>
+    <hr>
+    
+    <h4>Layouts</h4>
+    <ul>
+      <li><a href="sidebar.html">Right Sidebar</a></li>
+      <li><a href="sidebar-left.html">Left Sidebar</a></li>
+      <li><a href="single-column.html">Single Column</a></li>
+      <li><a href="hero-centered.html">Hero Section - Centered</a> </li>
+      <li><a href="hero-wide.html">Hero Section - Full Width</a></li>
+    </ul>
+
+    <hr>
+    <h5>Color Scheme</h5>
+    <p>The working color scheme... for now.  It was chosen to show the difference and shape/size of the grid and the individual grid items.</p>
+    <ul class="bordered">
+      <li style="background-color:#5F9F9F;">#5F9F9F Accent</li>
+      <li style="background-color:#0D5661;color:#FFF;">#0D5661 Darkest</li>
+      <li style="background-color:#F2C3B2;">#F2C3B2 Grid Items</li>
+      <li style="background-color:#DCD9BF;">#DCD9BF Grid Background</li>
+      <li style="background-color:#FEF5E4;">#FEF5E4 Body Background</li>
+    </ul>
+		<p>Hmmmm, maybe something in blues and some complementary color?</p>
+			
+	</aside>
+    
+	<footer class="footer">		
+		<p class="centered-text">This is the footer</p>
+    <p><small>Rant:  Why did they name a HTML " <span class="codey">aside</span>" an  <span class="codey">aside</span> without making it default positioned off to the the side (like in a text book) and why isn't there another "semantic" html tag called <span class="codey">sidebar</span>, like there is for <span class="codey">footer</span> and <span class="codey">header</span>.  While we're at it, why not <span class="codey">mainContent</span> or even just <span class="codey">main</span> as well?  Thanks for listening.</small></p>
+	</footer>
+</div><!--  end main grid  -->
+  
+</body>
+</html>
