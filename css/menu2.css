@@ -19,25 +19,26 @@
 	text-align: center;
 	line-height: 50px;
 	/* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
-	color: #fff;
-	background: #2f3036;
+	color: #5F9F9F;
+	background: #DCD9BF;
 	text-decoration: none;
 }
 /*Hover state for top level links*/
 .nav li:hover a {
-	background: #19c589;
+	background: #5F9F9F;
+	color:#DCD9BF;
 }
 /*Style for dropdown links*/
 .nav li:hover ul a {
-	background: #f3f3f3;
-	color: #2f3036;
+	background: #0D5661;
+	color: #DCD9BF;
 	height: 40px;
 	line-height: 40px;
 }
 /*Hover state for dropdown links*/
 .nav li:hover ul a:hover {
-	background: #19c589;
-	color: #fff;
+	background: #FEF5E4;
+	color: #0D5661;
 }
 /*Hide dropdown links until they are needed*/
 .nav li ul {
