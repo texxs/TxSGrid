@@ -127,8 +127,7 @@ ul{
 	.hamb{
 			display: none;
 	}
-}
-...
+
 /* Sub nav */
 .subnav-content {
     background-color:  var(--white);
@@ -147,9 +146,9 @@ ul{
 .subnav:hover .subnav-content {
     display: block;
 }
-....
+
 @media (min-width: 768px) {
-   ....
+ 
     /* Sub nav */
     .subnav-content {
         padding: 20px 0 ;
