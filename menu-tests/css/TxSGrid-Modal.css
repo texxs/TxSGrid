@@ -1,0 +1,66 @@
+/* Place font info for the modal here if you'd like */
+
+.wrapper div  {
+	border:2px solid blue;
+}
+
+
+/* Step 1 Put your content that you would like your modal to cover in a div with this class. */
+.miniWrapperGrid  {
+	display:grid;
+}
+
+
+/* Adjust the position shape color etc of the modal by adjusting this class */
+.modal  {	
+	background-color: #c7c7c7;
+	position:relative;
+	/* left: 10%;
+	right: 10%;
+	top: 10%;
+	bottom: 10%; */
+	margin: 3em auto 1600px auto;
+	width:45%;
+	max-width: 1000px;
+	min-width: 300px;
+
+	/* grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2; */
+
+	z-index: 1;
+	min-height: 300px;
+	max-height: 500px;
+	height: 40%;
+	border:1px solid black;
+	border-radius: 6px;
+	padding: 1em .5em 1em 1em;
+	filter: drop-shadow(16px 16px 10px black);
+}
+
+.button-close-modal {
+  display: block;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-left: 97%;
+}
+
+/*****************   Media Queries   ************/
+
+
+@media screen and (max-width: 800px) {
+	.modal  {
+		max-width:70%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.modal  {
+		max-width:90%;
+		left: 0px;
+		right: 5%;
+		top: 5%;
+		bottom: 5%;
+	}
+}
